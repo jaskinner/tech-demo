@@ -1,0 +1,14 @@
+services:
+  tech-demo:
+    build: .
+    ports:
+      - "8080:8080"
+    networks:
+      - tech-network
+    volumes:
+      - ./:/app
+      - ./sqlite:/var/lib/sqlite
+
+networks:
+  tech-network:
+    driver: bridge  
