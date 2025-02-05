@@ -1,0 +1,1 @@
+* * * * * cd /app && /usr/bin/crystal run /app/src/scraper.cr >> /home/scraper.log 2>&1
