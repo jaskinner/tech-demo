@@ -1,27 +1,15 @@
 # tech-demo
 
-TODO: Write a description here
+In this demo, I'm using Crystal language in a dockerized environment. Using shards myhtml to parse the html upon scraping and a sqlite connector, this application fetches price data for a specific model on the product page and commits it to the sqlite database with a unix timestamp and date.
+
+The docker container is built using docker compose to create a crystal language environment on a linux image. Necessary dependencies are pulled and the cron flow is established by pulling in a configurable file called scraper-cron. Cron must be run explicitly to begin the cron process.
 
 ## Installation
 
-TODO: Write installation instructions here
+`docker compose up`
 
 ## Usage
 
-TODO: Write usage instructions here
+If collecting data, run `cron` inside the docker command line to start collecting every 60 seconds.
 
-## Development
-
-TODO: Write development instructions here
-
-## Contributing
-
-1. Fork it (<https://github.com/your-github-user/tech-demo/fork>)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
-
-## Contributors
-
-- [jaskinner](https://github.com/your-github-user) - creator and maintainer
+visit 0.0.0.0:8080 in a browser.
