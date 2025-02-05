@@ -21,4 +21,4 @@ def fetch_prices : String
   prices
 end
 
-p fetch_prices
+fetch_prices
